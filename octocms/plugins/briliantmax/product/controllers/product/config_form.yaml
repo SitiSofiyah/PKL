@@ -1,0 +1,10 @@
+name: Product
+form: $/briliantmax/product/models/product/fields.yaml
+modelClass: Briliantmax\Product\Models\Product
+defaultRedirect: briliantmax/product/product
+create:
+    redirect: 'briliantmax/product/product/update/:id'
+    redirectClose: briliantmax/product/product
+update:
+    redirect: briliantmax/product/product
+    redirectClose: briliantmax/product/product

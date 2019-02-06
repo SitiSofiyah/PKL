@@ -1,0 +1,11 @@
+plugin:
+    name: 'briliantmax.layanan::lang.plugin.name'
+    description: 'briliantmax.layanan::lang.plugin.description'
+    author: Briliantmax
+    icon: oc-icon-user
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Layanan
+        url: briliantmax/layanan/layanan
+        icon: icon-user

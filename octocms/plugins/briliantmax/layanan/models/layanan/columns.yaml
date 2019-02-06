@@ -1,0 +1,9 @@
+columns:
+    title:
+        label: title
+        type: text
+        searchable: true
+        sortable: true
+    layanan:
+        label: layanan
+        type: text

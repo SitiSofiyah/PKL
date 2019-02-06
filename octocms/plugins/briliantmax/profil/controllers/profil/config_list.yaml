@@ -1,0 +1,12 @@
+list: $/briliantmax/profil/models/profil/columns.yaml
+modelClass: Briliantmax\Profil\Models\Profil
+title: Profil
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'briliantmax/profil/profil/update/:id'

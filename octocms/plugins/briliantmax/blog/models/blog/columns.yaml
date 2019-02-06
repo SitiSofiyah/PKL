@@ -1,0 +1,14 @@
+columns:
+    title:
+        label: Title
+        type: text
+        searchable: true
+        sortable: true
+    date:
+        label: Date
+        type: date
+        sortable: true
+    post:
+        label: Post
+        type: text
+        searchable: true

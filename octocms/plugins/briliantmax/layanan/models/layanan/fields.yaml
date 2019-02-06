@@ -1,0 +1,10 @@
+fields:
+    title:
+        label: Title
+        span: auto
+        type: text
+    layanan:
+        label: Layanan
+        span: auto
+        size: ''
+        type: richeditor

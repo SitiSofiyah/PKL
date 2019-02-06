@@ -1,0 +1,10 @@
+name: Profil
+form: $/briliantmax/profil/models/profil/fields.yaml
+modelClass: Briliantmax\Profil\Models\Profil
+defaultRedirect: briliantmax/profil/profil
+create:
+    redirect: 'briliantmax/profil/profil/update/:id'
+    redirectClose: briliantmax/profil/profil
+update:
+    redirect: briliantmax/profil/profil
+    redirectClose: briliantmax/profil/profil

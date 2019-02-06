@@ -1,0 +1,10 @@
+name: Blog
+form: $/briliantmax/blog/models/blog/fields.yaml
+modelClass: Briliantmax\Blog\Models\Blog
+defaultRedirect: briliantmax/blog/blog
+create:
+    redirect: 'briliantmax/blog/blog/update/:id'
+    redirectClose: briliantmax/blog/blog
+update:
+    redirect: briliantmax/blog/blog
+    redirectClose: briliantmax/blog/blog

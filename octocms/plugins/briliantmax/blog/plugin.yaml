@@ -1,0 +1,11 @@
+plugin:
+    name: 'briliantmax.blog::lang.plugin.name'
+    description: 'briliantmax.blog::lang.plugin.description'
+    author: Briliantmax
+    icon: oc-icon-book
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Blogs
+        url: briliantmax/blog/blog
+        icon: icon-book

@@ -1,0 +1,10 @@
+name: Slider
+form: $/briliantmax/slider/models/slider/fields.yaml
+modelClass: Briliantmax\Slider\Models\Slider
+defaultRedirect: briliantmax/slider/slider
+create:
+    redirect: 'briliantmax/slider/slider/update/:id'
+    redirectClose: briliantmax/slider/slider
+update:
+    redirect: briliantmax/slider/slider
+    redirectClose: briliantmax/slider/slider

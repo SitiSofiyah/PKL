@@ -1,0 +1,31 @@
+columns:
+    name:
+        label: name
+        type: text
+    address:
+        label: address
+        type: text
+    logo:
+        label: logo
+        type: text
+    email:
+        label: email
+        type: text
+    phone:
+        label: phone
+        type: text
+    fax:
+        label: fax
+        type: text
+    desc:
+        label: desc
+        type: text
+    motto:
+        label: motto
+        type: switch
+    product:
+        label: product
+        type: text
+    contact:
+        label: contact
+        type: text

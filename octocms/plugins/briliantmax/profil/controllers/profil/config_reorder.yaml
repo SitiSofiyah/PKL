@@ -1,0 +1,4 @@
+title: Profil
+modelClass: Briliantmax\Profil\Models\Profil
+toolbar:
+    buttons: reorder_toolbar

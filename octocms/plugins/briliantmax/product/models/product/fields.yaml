@@ -1,0 +1,15 @@
+fields:
+    title:
+        label: 'Name of Product'
+        span: auto
+        type: text
+    product_gallery:
+        label: 'Gallery Product'
+        span: auto
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        required: 1
+        type: fileupload

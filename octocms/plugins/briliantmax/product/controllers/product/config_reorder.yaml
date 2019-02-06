@@ -1,0 +1,4 @@
+title: Product
+modelClass: Briliantmax\Product\Models\Product
+toolbar:
+    buttons: reorder_toolbar

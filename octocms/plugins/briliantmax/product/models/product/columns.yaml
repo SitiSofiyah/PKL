@@ -1,0 +1,9 @@
+columns:
+    title:
+        label: title
+        type: text
+        searchable: true
+        sortable: true
+    product_gallery:
+        label: product_gallery
+        type: text

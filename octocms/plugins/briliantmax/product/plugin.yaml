@@ -1,0 +1,11 @@
+plugin:
+    name: 'briliantmax.product::lang.plugin.name'
+    description: 'briliantmax.product::lang.plugin.description'
+    author: Briliantmax
+    icon: oc-icon-briefcase
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Product
+        url: briliantmax/product/product
+        icon: icon-briefcase

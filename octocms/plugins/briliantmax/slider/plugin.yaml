@@ -1,0 +1,11 @@
+plugin:
+    name: 'briliantmax.slider::lang.plugin.name'
+    description: 'briliantmax.slider::lang.plugin.description'
+    author: Briliantmax
+    icon: oc-icon-image
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Slider
+        url: briliantmax/slider/slider
+        icon: icon-image

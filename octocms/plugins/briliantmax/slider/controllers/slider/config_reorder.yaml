@@ -1,0 +1,4 @@
+title: Slider
+modelClass: Briliantmax\Slider\Models\Slider
+toolbar:
+    buttons: reorder_toolbar

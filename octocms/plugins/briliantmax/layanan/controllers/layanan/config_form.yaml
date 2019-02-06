@@ -1,0 +1,10 @@
+name: Layanan
+form: $/briliantmax/layanan/models/layanan/fields.yaml
+modelClass: Briliantmax\Layanan\Models\Layanan
+defaultRedirect: briliantmax/layanan/layanan
+create:
+    redirect: 'briliantmax/layanan/layanan/update/:id'
+    redirectClose: briliantmax/layanan/layanan
+update:
+    redirect: briliantmax/layanan/layanan
+    redirectClose: briliantmax/layanan/layanan

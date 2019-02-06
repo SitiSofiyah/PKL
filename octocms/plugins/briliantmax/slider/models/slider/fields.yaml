@@ -1,0 +1,14 @@
+fields:
+    slider:
+        label: Slider
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    title:
+        label: Title
+        span: auto
+        type: text

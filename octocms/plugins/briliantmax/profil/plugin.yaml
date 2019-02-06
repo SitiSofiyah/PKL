@@ -1,0 +1,11 @@
+plugin:
+    name: 'briliantmax.profil::lang.plugin.name'
+    description: 'briliantmax.profil::lang.plugin.description'
+    author: Briliantmax
+    icon: oc-icon-bank
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Profil
+        url: briliantmax/profil/profil
+        icon: icon-bank

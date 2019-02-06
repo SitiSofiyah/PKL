@@ -1,0 +1,4 @@
+title: Layanan
+modelClass: Briliantmax\Layanan\Models\Layanan
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,96 @@
+[viewBag]
+
+[builderList]
+modelClass = "Briliantmax\Blog\Models\Blog"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "id"
+noRecordsMessage = "No records found"
+detailsPage = "blog-detail"
+detailsKeyColumn = "id"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+<div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Latest Blogs</h2>
+                 </div>
+
+           {% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+
+    {% for record in records %}
+         <div class="column">
+                <div class="col-md-4">
+                    <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
+                 <article>
+                           <header class="entry-header"> 
+                               <div class="entry-thumbnail">
+                                  <!--  <img class="img-responsive" src="{{ 'assets/images/blog/01.jpg'|theme }}" alt="">
+                                  -->
+                               </div>
+                               <div class="entry-date"> </div>
+                               <h2 class="entry-title"> 
+        
+            {# Use spaceless tag to remove spaces inside the A tag. #}
+            {% spaceless %}
+              
+
+                {{ record.title }}
+                 </h2>
+                  </header>
+                              <div class="entry-content">
+                               {{ html_limit(record.post,150|raw) }}
+                               
+                                 {% if detailsPage %}
+                    <a href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}">
+                {% endif %}
+                               <button class="btn btn-primary">Read More</button>
+                               
+                              {% if detailsPage %}
+  
+                    </a>
+                {% endif %}  
+                           </div>
+                           
+                           <footer class="entry-meta">
+                               <span class="entry-author"><i class="fa fa-pencil"></i>   {{ record.date }}</span>
+                           
+                           </footer>
+               
+            {% endspaceless %}
+        
+       
+                          
+                         
+                        </article>
+                    </div>
+                </div>
+        </div>
+    {% else %}
+        <li class="no-data">{{ noRecordsMessage }}</li>
+    {% endfor %}
+</ul>
+
+{% if records.lastPage > 1 %}
+    <ul class="pagination">
+        {% if records.currentPage > 1 %}
+            <li><a href="{{ this.page.baseFileName|page({ (pageParam): (records.currentPage-1) }) }}">&larr; Prev</a></li>
+        {% endif %}
+
+        {% for page in 1..records.lastPage %}
+            <li class="{{ records.currentPage == page ? 'active' : null }}">
+                <a href="{{ this.page.baseFileName|page({ (pageParam): page }) }}">{{ page }}</a>
+            </li>
+        {% endfor %}
+
+        {% if records.lastPage > records.currentPage %}
+            <li><a href="{{ this.page.baseFileName|page({ (pageParam): (records.currentPage+1) }) }}">Next &rarr;</a></li>
+        {% endif %}
+    </ul>
+{% endif %}
